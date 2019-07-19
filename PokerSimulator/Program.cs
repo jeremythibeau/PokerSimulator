@@ -21,8 +21,12 @@ namespace PokerSimulator
             }
             deck = deck.Shuffle();
             p1Hand.drawCard(deck.drawCard());
+            p1Hand.drawCard(deck.drawCard());
             Console.WriteLine(p1Hand.printHand());
-            Console.WriteLine(p1Hand.numcards);
+            Console.WriteLine("Number of cards in hand: {0}", p1Hand.numcards);
+            Console.WriteLine("*****");
+            Console.WriteLine(deck.printDeck());
+            Console.WriteLine("Number of cards in deck: {0}", deck.numcards);
             Console.ReadKey();
         }
     }

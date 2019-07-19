@@ -18,6 +18,7 @@ namespace PokerSimulator
         public void drawCard(Card c)
         {
             numcards++;
+            c.next = null;
             if (head == null)
             {
                 head = c;
